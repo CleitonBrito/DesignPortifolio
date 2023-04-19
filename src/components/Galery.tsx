@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -77,14 +76,14 @@ const photos = [
         title: 'Perfume Ferrari',
         src: Img9,
         width: 4,
-        height: 5.65
+        height: 7.1
     },
     {
         id: Math.random(),
         title: 'Perfume Silver Scent',
         src: Img10,
         width: 4,
-        height: 5.65
+        height: 7.1
     },
     {
         id: Math.random(),
@@ -110,22 +109,24 @@ export function Galery(){
     };
 
     return (
-        <div className="w-full py-10 pb-40">
-            <Gallery photos={ photos } onClick={openLightbox} direction={"column"} />;
-            <ModalGateway>
-                {viewerIsOpen ? (
-                    <Modal onClose={closeLightbox}>
-                        <Carousel
-                            currentIndex={currentImage}
-                            views={photos.map(x => ({
-                                ...x,
-                                srcset: x.src,
-                                caption: x.title
-                            }))}
-                        />
-                    </Modal>
-                ) : null}
-            </ModalGateway>
+        <div className="section-gray px-4 pt-12 sm:px-0 w-full flex justify-center">
+            <div className="w-full py-10 pb-40 max-w-5xl">
+                <Gallery photos={ photos } onClick={openLightbox} direction={"column"} />
+                <ModalGateway>
+                    {viewerIsOpen ? (
+                        <Modal onClose={closeLightbox}>
+                            <Carousel
+                                currentIndex={currentImage}
+                                views={photos.map(x => ({
+                                    ...x,
+                                    srcset: x.src,
+                                    caption: x.title
+                                }))}
+                            />
+                        </Modal>
+                    ) : null}
+                </ModalGateway>
+            </div>
         </div>
     )
 }

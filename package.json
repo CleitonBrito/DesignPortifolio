@@ -11,8 +11,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-images": "1.0.0",
-    "react-photo-gallery": "^8.0.0"
+    "react-photo-gallery": "^8.0.0",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",

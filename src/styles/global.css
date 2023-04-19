@@ -2,7 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    font-family: 'ABeeZee', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 .react-images__view-image--isModal {
  display: inline-block;
  left: 50%
+}
+
+.header {
+    position: relative;
+    z-index: 1!important;
+    margin: 5em auto;
+    height: 82vh;
+}
+
+@media (min-width: 600px) {
+    .header {
+        height: 100vh;
+    }
+}
+
+
+.section-gray {
+    background: #a7a7a7;
+}
+
+.curve-start {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background-image: url("../assets/wave-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.curve-end {
+    position: absolute;
+    transform: translate(0, -140px);
+    left: 0;
+    padding: 0;
+    width: 100%!important;
+    height: 200px!important;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+@media (max-width: 600px) {
+    .curve-end {
+        background-image: url("../assets/layered-waves-haikei-500.svg");
+    }
+}
+
+.line {
+    margin: 2em 0 1em;
+    width: 20em;
+    max-widht: 80px;
+    height: 2px;
+    color: white;
+}
+
+.msg-hello {
+    font-family: 'Rowdies';
+}
+
+.iconWhats {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    z-index: 1;
 }
