@@ -1,7 +1,10 @@
 import './styles/global.css'
 import { Header } from './components/Header'
 import { Galery } from './components/Galery'
+import { Footer } from './components/Footer'
+
 import { IconWhats } from './components/IconWhats'
+import { IconTop } from './components/IconTop'
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
                 <div className="curve-end flex" />
                 <Galery />
                 <IconWhats />
+                <IconTop />
+                <Footer />
           </div>
       </div>
   )

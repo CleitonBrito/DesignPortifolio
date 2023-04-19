@@ -7,6 +7,7 @@ import LightSpeed from 'react-reveal/LightSpeed'
 export function Header(){
     return (
         <div className='header w-full max-w-3xl mx-auto flex px-10 sm:px-0 flex-col justify-center items-center'>
+            <div className="dotted"></div>
             <img className="mb-2 w-16 h-16" src={logo} />
             <LightSpeed left><h1 className="msg-hello text-slate-200 font-medium text-5xl leading-0 mb-0">Olá, eu sou <span className='text-amber-300'>Cleiton Brito</span>.</h1></LightSpeed>
             <hr className='line' />

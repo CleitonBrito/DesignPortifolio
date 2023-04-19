@@ -109,8 +109,8 @@ export function Galery(){
     };
 
     return (
-        <div className="section-gray px-4 pt-12 sm:px-0 w-full flex justify-center">
-            <div className="w-full py-10 pb-40 max-w-5xl">
+        <div className="section-gray px-5 pt-12 sm:px-10 md:px-28 w-full flex justify-center">
+            <div className="w-full pt-10 pb-8 pb-40 max-w-5xl">
                 <Gallery photos={ photos } onClick={openLightbox} direction={"column"} />
                 <ModalGateway>
                     {viewerIsOpen ? (
