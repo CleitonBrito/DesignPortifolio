@@ -98,7 +98,7 @@ export function Galery(){
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-    const openLightbox = useCallback((event, { photos, index }) => {
+    const openLightbox = useCallback((event : any, { photos, index }: any) => {
         setCurrentImage(index);
         setViewerIsOpen(true);
     }, []);
@@ -110,7 +110,7 @@ export function Galery(){
 
     return (
         <div className="section-gray px-5 pt-12 sm:px-10 md:px-28 w-full flex justify-center">
-            <div className="w-full pt-10 pb-8 pb-40 max-w-5xl">
+            <div className="w-full pt-10 pb-8 max-w-5xl">
                 <Gallery photos={ photos } onClick={openLightbox} direction={"column"} />
                 <ModalGateway>
                     {viewerIsOpen ? (
