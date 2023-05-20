@@ -2,51 +2,75 @@ import { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-import Img1 from "../assets/gallery/PontodoPeixe1.png"
-import Img2 from "../assets/gallery/PontodoPeixe2.png"
-import Img3 from "../assets/gallery/PontodoPeixe3.png"
-import Img4 from "../assets/gallery/Banner Dhevidy 01 - Adquira sua Honda.png"
-import Img5 from "../assets/gallery/Banner 02 Dhevidy - Faça um consórcio.png"
+import Img1 from "../assets/gallery/Sites-Apps 01.png"
+import Img2 from "../assets/gallery/Story-Silver Scent 50ml.png"
+import Img3 from "../assets/gallery/Story-Ferrari Black 50ml.png"
+import Img4 from "../assets/gallery/Banner - 1º Arraía Boa Vista (2).png"
+import Img5 from "../assets/gallery/Crédito-Pay.png"
 import Img6 from "../assets/gallery/Moto Nova-2-2.png"
-import Img7 from "../assets/gallery/Crédito-Pay.png"
-import Img8 from "../assets/gallery/Banner - 1º Arraía Boa Vista (2).png"
-import Img9 from "../assets/gallery/Story-Ferrari Black 50ml.png"
-import Img10 from "../assets/gallery/Story-Silver Scent 50ml.png"
-import Img11 from "../assets/gallery/Sites-Apps 01.png"
+import Img7 from "../assets/gallery/Banner 02 Dhevidy - Faça um consórcio.png"
+import Img8 from "../assets/gallery/Banner Dhevidy 01 - Adquira sua Honda.png"
+import Img9 from "../assets/gallery/PontodoPeixe3.png"
+import Img10 from "../assets/gallery/PontodoPeixe2.png"
+import Img11 from "../assets/gallery/PontodoPeixe1.png"
+import Img12 from "../assets/gallery/Chocolate Quente.jpg"
+import Img13 from "../assets/gallery/Barzinho.jpg"
+import Img14 from "../assets/gallery/Açaí no Copo.jpg"
 
 const photos = [
     {
         id: Math.random(),
+        title: 'Açaí no Copo',
+        src: Img14,
+        width: 4,
+        height: 5
+    },
+    {
+        id: Math.random(),
+        title: 'Barzinho',
+        src: Img13,
+        width: 4,
+        height: 5
+    },
+    {
+        id: Math.random(),
+        title: 'Chocolate Quente',
+        src: Img12,
+        width: 4,
+        height: 5
+    },
+    {
+        id: Math.random(),
         title: 'O melhor peixe',
-        src: Img1,
+        src: Img11,
         width: 4,
         height: 4
     },
     {
         id: Math.random(),
         title: 'Promoção compre e ganhe',
-        src: Img2,
+        src: Img10,
         width: 4,
         height: 4
     },
     {
         id: Math.random(),
         title: 'Deu fome? Pede um Zap',
-        src: Img3,
+        src: Img9,
         width: 4,
         height: 4
     },
     {
         id: Math.random(),
         title: 'Adquira sua Honda',
-        src: Img4,
+        src: Img8,
         width: 4,
         height: 5.65
     },
     {
         id: Math.random(),
         title: 'Venha fazer seu consórcio',
-        src: Img5,
+        src: Img7,
         width: 4,
         height: 5.65
     },
@@ -60,35 +84,35 @@ const photos = [
     {
         id: Math.random(),
         title: 'Pay Crédito',
-        src: Img7,
+        src: Img5,
         width: 4,
         height: 5.65
     },
     {
         id: Math.random(),
         title: 'Arraía Boa Vista',
-        src: Img8,
+        src: Img4,
         width: 4,
         height: 5.65
     },
     {
         id: Math.random(),
         title: 'Perfume Ferrari',
-        src: Img9,
+        src: Img3,
         width: 4,
         height: 7.1
     },
     {
         id: Math.random(),
         title: 'Perfume Silver Scent',
-        src: Img10,
+        src: Img2,
         width: 4,
         height: 7.1
     },
     {
         id: Math.random(),
         title: 'Site Rifas',
-        src: Img11,
+        src: Img1,
         width: 4,
         height: 4
     },
