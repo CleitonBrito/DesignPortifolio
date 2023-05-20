@@ -133,7 +133,7 @@ export function Galery(){
     };
 
     return (
-        <div className="section-gray px-5 pt-12 sm:px-10 md:px-28 w-full flex justify-center">
+        <div id="galery" className="section-gray px-5 pt-12 sm:px-10 md:px-28 w-full flex justify-center">
             <div className="w-full pt-10 pb-8 max-w-5xl">
                 <Gallery photos={ photos } onClick={openLightbox} direction={"column"} />
                 <ModalGateway>

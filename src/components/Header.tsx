@@ -12,10 +12,12 @@ export function Header(){
             <LightSpeed left><h1 className="msg-hello text-slate-200 font-medium text-5xl leading-0 mb-0">Olá, eu sou <span className='text-amber-300'>Cleiton Brito</span>.</h1></LightSpeed>
             <hr className='line' />
             <h3 className="text-slate-200 font-medium text-xl mt-0">Sejam bem vindos à minha galeria de artes gráficas.</h3>
-            <img className='w-14 h-14 animate-bounce mt-14' src={ arrow }  />
-            <HeadShake>
-            <span className='text-amber-400 text-10'>NÃO DESÇA!</span>
-            </HeadShake>
+            <a href="#galery">
+                <img className='w-14 h-14 animate-bounce mt-14 mx-auto' src={ arrow }  />
+                <HeadShake>
+                    <span className='text-amber-400 text-10'>NÃO DESÇA!</span>
+                </HeadShake>
+            </a>
         </div>
     )
 }
